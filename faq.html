@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+     <link rel="stylesheet" href="styles/faq.css">
+     <link rel="stylesheet" href="styles/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="icons/logo.png" width="50px" height="50px"> RideReady Car Rental System</div>
+      <nav>
+          <ul>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="car_details.html">Car details</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+          </ul>
+      </nav>
+      <div class="login-section">
+        <a href="login.php">
+          <button class="btn">Log in</button>
+      </a>
+          <a href="admin.html">
+            <button class="btn">Dashboard</button>
+        </a>
+      </div>
+  </header>
+
+
+    <div class="wrapper">
+      
+      <h1>Frequently Asked Questions</h1>
+      <p>Welcome to the Ride Ready Car Rental FAQ section. Here, 
+        you’ll find answers to some of the most commonly asked questions about our services,
+         policies, and procedures. Whether you're curious about booking, rental requirements, or 
+         payment options, we’ve got you covered. 
+        If you don’t find the answer you’re looking for, 
+        feel free to contact our customer support team for 
+        assistance.</p>
+
+      <div class="faq">
+        <button class="accordion">
+          What documents do I need to rent a car?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            You will need a valid driver's license, a credit card, 
+                    and proof of insurance 
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is the fuel policy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our fuel policy is full-to-full. Please return the car with a full tank.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Can I modify or cancel my booking?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, you can modify or cancel your booking up to 
+            24 hours before your rental period begins. 
+
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What should I do in case of an accident?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Contact local authorities, ensure everyone is safe, 
+            and notify our customer support as soon as 
+            possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What payment methods do you accept?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We accept major credit cards, debit cards, and online payment platforms. 
+            Cash payments are not accepted at this time.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Do you offer long-term rentals?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, we offer long-term rentals at discounted rates.
+            Please contact our customer support for more details.
+          </p>
+        </div>
+      </div>
+       
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+
+<footer>
+  <div class="footer-links">
+      <a href="#">Help</a> |
+      <a href="#">Rental Information</a> |
+      <a href="#">Terms and Conditions</a>
+  </div>
+  <div class="social-media">
+      <a href="https://www.instagram.com">
+  <img src="icons/instagram.png" alt="instagram" width="3%" height="3%">
+</a>
+
+      <a href="https://web.facebook.com/?_rdc=1&_rdr">
+  <img src="icons/facebook.png" alt="Facebook" width="3%" height="3%">
+</a>
+
+      <a href="https://lk.linkedin.com/">
+  <img src="icons/linkedin.png" alt="Linkedin" width="3%" height="3%">
+</a>
+
+      <a href="https://x.com/?lang=en">
+  <img src="icons/x.png" alt="X" width="3%" height="3%">
+</a>
+  </div>
+  <div class="app-links">
+      <a href="https://www.apple.com/app-store/">
+  <img src="icons/applestore.png" alt="Download on the App Store" width="10%" height="3%">
+</a>
+
+      <a href="https://lk.linkedin.com/">
+  <img src="icons/googlestore.png" alt="Get it on Google Play" width="10%" height="3%">
+</a>
+  </div>
+  <p>&copy; RideReady 2024</p>
+</footer>
+  </body>
+</html>

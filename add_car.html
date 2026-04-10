@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Car</title>
+    <link rel="stylesheet" href="styles/add_car.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Car</h2>
+        <form action="add_car.php" method="post" id="addCarForm">
+            <label for="carName">Car Name:</label>
+            <input type="text" id="carName" name="name" required><br>
+
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input type="text" id="vehicleNumber" name="number" required><br>
+
+            <label for="fuelType">Fuel Type:</label>
+            <select id="fuelType" name="fuelType" required>
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+                <option value="electric">Electric</option>
+            </select><br>
+
+            <label for="addedDate">Added Date:</label>
+            <input type="date" id="addedDate" name="addedDate" required><br>
+
+            <label for="millage">Milage:</label>
+            <input type="number" id="millage" name="millage" required><br> <!-- Changed to number for int -->
+
+            <label for="rentalPrice">Rental Price:</label>
+            <input type="number" id="rentalPrice" name="rentalPrice" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="1st.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
